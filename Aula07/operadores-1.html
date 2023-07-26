@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+
+        //Operadores aritiméticos
+        document.write("5 + 2 = " + (5 + 2) + "<br>") 
+        document.write("5 - 2 = " + (5 - 2) + "<br>") 
+        document.write("5 * 2 = " + 5 * 2 + "<br>") 
+        document.write("5 / 2 = " + 5 / 2 + "<br>" )
+        document.write("5 % 2 = " + 5 % 2 + "<br>") //resto da divisão
+        document.write("5 ** 2 = " + 5 ** 2 + "<br>") //elevado
+
+        /*Precedencia (Em que ordem serão lidos e executados)
+        ()
+        **
+        * / %
+        + -
+
+        */
+
+        //Operador de atribuição
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+        document.write("<br><br>" + a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e + "<br>" + f + "<br>");
+
+        //Operadores de incremento
+
+        document.write("<br><br>" + (a++))
+        document.write("<br>" + (a--))
+        document.write("<br>" + a)
+
+        document.write("<br>" + ++a)
+        document.write("<br>" + --a)
+        document.write("<br>" + a)
+
+    </script>
+</body>
+</html>

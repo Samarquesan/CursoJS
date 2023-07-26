@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indentificador de nacionalidade</title>
+</head>
+<body>
+    <h1>Verificando Nacionalidade</h1>
+    Diga seu país: <input type="text" name="txtname" id="txtname">
+    <input type="button" value="Verificar" onclick="consultar()">
+    <div id="res">
+
+    </div>
+<script>
+    function consultar() {
+        var pais = document.querySelector('input#txtname')
+        var res = document.querySelector('div#res')
+        
+        res.innerHTML = `Vivendo em ${pais.value}`
+        if (pais.value === "Brasil") {
+        res.innerHTML += `<p>Você é brasileiro!</p>` 
+        } else {
+        res.innerHTML +=  `<p>Você é estrangeiro!</p>` 
+        }
+    }
+</script>
+    </div>
+</body>
+</html>

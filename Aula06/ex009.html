@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Enquete de nascionalidade.</h1>
+    País onde nasceu:<input type="text" name="txtpais" id="txtpais" onkeypress="enterPress(event)">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function enterPress(evento){
+            if(evento.keyCode == 13){
+                verificar()   
+            }
+        }
+        function verificar() {
+            var pais= document.querySelector('input#txtpais')
+            var res= document.querySelector('div#res')
+            res.innerHTML  = `<p>Vivendo em ${pais.value}</p>`
+            if(pais.value != 'Brasil'){
+              res.innerHTML += `<p>Você é estrangeiro!</p>`
+            } else {
+                res.innerHTML += `<p> Você é brasileiro!</p>`
+            }
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

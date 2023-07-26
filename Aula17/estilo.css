@@ -1,0 +1,34 @@
+body {
+    background: rgb(116, 116, 207);
+    font: normal 15pt Arial;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px; 
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+}
+
+select#flista {
+    width: 150px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+section#tabela {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

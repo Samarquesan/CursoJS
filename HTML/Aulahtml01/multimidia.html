@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+<script src="funcoes.js"></script>
+
+<body>
+
+
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando!</h2>
+            </hgroup>
+
+            <img id="icone" src="imagens/multimidia1.png" alt="OI"> <br /><br />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('imagens/the-home.png')" onmouseout="mudaFoto('imagens/multimidia1.png')">
+                        <a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('imagens/multimidia1.png')"><a href="index.html"><a
+                                href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/fotos1.png')" onmouseout="mudaFoto('imagens/multimidia1.png')"><a
+                            href="index.html"><a href="fotos.html">Fotos</a> </li>
+                    <li onmouseover="mudaFoto('imagens/multimidia1.png')"
+                        onmouseout="mudaFoto('imagens/multimidia1.png')"><a href="index.html"><a
+                                href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/multimidia1.png')">
+                        <a href="index.html"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <H2>por Samuel Marques</H2>
+                        <h3 class="direita">Atualizado em 24/Novembro/2020</h3>
+                    </hgroup>
+                </header>
+
+                <div id="tv-radio">
+                    <audio id="musica" controls="controls" src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+
+                    </audio>
+                    <video id="filme" controls="controls" poster="imagens/video-mini03.jpg"
+                        src="media/getting-started.mp4" type="video/mp4">
+
+                    </video>
+
+                </div>
+
+                <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> [EXEMPLO DE COMO ANEXAR VIDEO DO YOUTUBE// COMPARTILHA/INCORPORAR]-->
+
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2020 - by Samuel Marques <br />
+                <a href="http://facebook.com/samuel.marques.969952" target="_blank"> Facebook </a> |
+                <a href="http://twitter.com/SamSimicSamu?s=09" target="_blank"> Twitter </a> </p>
+        </footer>
+        </section>
+
+
+
+    </div>
+</body>
+
+</html>
