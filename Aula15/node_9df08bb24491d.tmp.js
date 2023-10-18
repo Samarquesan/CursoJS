@@ -39,32 +39,12 @@ if(pos== -1) {
 
 let carros = ['Gol', 'Uno', 'Celta', 'Palio', 'KA', 'Clio']
 
-for(i = 0; i < carros.length; i++){
+for(i = 0; i <= carros.length++; i++){
     console.log(`Aposição ${i} é ${carros[i]}`)
 }
 
-carros.push('Vectra')
-
-carros[3]= 'Mercedes'
-console.log(carros)
-
-let numbers = [5, 2, 6, 7, 1, 8, 3]
-numbers.sort()
-console.log(numbers)
-
-for(let pos = 0; pos < numbers.length; pos++){
-    console.log(`A posição ${pos} tem o valor ${numbers[pos]}`)
-}
 
 
-for(let pos in numbers){
-    console.log(`Aposição ${pos} possui o valor ${numbers[pos]}`)
-}//Só funciona para arrays e objetos
-let final = numbers.indexOf(4)
 
 
-if(final == -1){
-    console.log('O valor não foi encontrado!')
-} else{
-    console.log(`O valor 5 está na posição ${final}`)
-}
+
