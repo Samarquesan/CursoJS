@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(234, 165, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    box-shadow:  3px 3x 10px rgba(0, 0, 0, 0.347);
+
+}
+
+select#flista{
+    width: 150px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+section#tabela{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
