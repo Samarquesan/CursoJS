@@ -1,9 +1,10 @@
-let number= document.getElementById('IdNum')
+let num= document.getElementById('fnum')
 let lista = document.getElementById('flista')
-let resposta = document.getElementById('IdResp')
+let res = document.getElementById('res')
 let valores = []
-function isNumber(n){
-    if(Number(n) >= 1 && Number(n)<= 100 ){
+
+function isNumero(n){
+    if(Number(n) >= 1 && Number(n) <= 100 ){
         return true
     } else {
         return false
@@ -11,7 +12,7 @@ function isNumber(n){
 }
 
 function inLista(n , l){
-    if(l.indexOf(Number(n) != -1)){
+    if(l.indexOf(Number(n)) != -1){
         return true
     } else {
         return false
@@ -19,17 +20,17 @@ function inLista(n , l){
 }
 
 function adicionar(){
-    if(isNumber(number.value) && !inLista(number.value, valores)){
-        valores.push(Number(number.value))
+    if(isNumero(num.value) && !inLista(num.value, valores)){
+        valores.push(Number(num.value))
         let item = document.createElement('option')
-        item.text = `Valor ${number.value} adicionado.`
+        item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
         res.innerHTML = ''
     } else {
         window.alert('Valor inválido ou já encontrado na lista!')
     }
-    number.value = ''
-    number.focus()
+    num.value = ''
+    num.focus()
 }
 
 function finalizar(){
@@ -44,25 +45,25 @@ function finalizar(){
 
         for(let pos in valores){
             soma += valores[pos]
-            if(valores[pos] > maior){
+            if(valores[pos] > maior)
                 maior = valores[pos]
-            }
-            if(valore[pos] < menor){
+            
+            if(valores[pos] < menor)
                 menor = valores[pos]
-            }
+            
         }
         media = soma /tot
-        res.innerHTML = ''
-        res.innerHTML = `<p>Ao total temos &{tot} Números cadastrados.</p>`
-        res.innerHTML = `<p>O maior valor informado foi &{maior}</p>`
-        res.innerHTML = `<p>O menor valor informado foi &{menor}</p>`
-        res.innerHTML = `<p>Somando todos os valores temos &{soma}</p>`
-        res.innerHTML = `<p>A média dos valores é &{media}</p>`
+        res.innerHTML += ''
+        res.innerHTML += `<p>Ao total temos ${tot} Números cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+        res.innerHTML += `<p>Somando todos os valores temos ${soma}</p>`
+        res.innerHTML += `<p>A média dos valores é ${media}</p>`
        
     }
 }
 
-function Clean{
+function Clean(){
     res.innerHTML = ''
     lista.innerHTML = ''
 }
